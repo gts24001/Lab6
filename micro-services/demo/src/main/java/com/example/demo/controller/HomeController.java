@@ -26,7 +26,7 @@ public class HomeController {
   @PostMapping(path="/say-hi-back", consumes="application/json")
   @ResponseStatus(HttpStatus.CREATED)
     public String say_hi_back(@RequestParam(value = "data",
-        defaultValue = "Enjoy your day!") String data) {
+        defaultValue = "Enjoy your day!\n") String data) {
   return "Echo: " + data;
   }
 

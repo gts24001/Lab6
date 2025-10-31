@@ -11,13 +11,13 @@ git push -u origin main
 
 
 curl -X POST "http://localhost:8080/email-address-valid?email=test@example.com" -H "Content-Type: application/json"
-# Valid Email
+# Valid Email Address
 
 curl -X POST "http://localhost:8080/check-password-strength?password=MyStr0ng@Pass" -H "Content-Type: application/json"
 # Very Strong
 
 curl -X POST "http://localhost:8080/check-password-strength?password=Password123" -H "Content-Type: application/json"
-# Expected output: "Medium"
+# Expected output: "Strong"
 
 curl -X POST "http://localhost:8080/say-hi-back" -H "Content-Type: application/json"
 # Expected output: "Echo: Enjoy your day!"
